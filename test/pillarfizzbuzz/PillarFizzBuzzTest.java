@@ -43,4 +43,10 @@ public class PillarFizzBuzzTest {
         assertEquals("1", fizzBuzz.fizz(1));
     }
     
+    @Test
+    public void whenFizzBuzzIsPassedATwoItReturnsATwo(){
+        PillarFizzBuzz fizzBuzz = new PillarFizzBuzz();
+        assertEquals("2", fizzBuzz.fizz(2));
+    }
+    
 }
