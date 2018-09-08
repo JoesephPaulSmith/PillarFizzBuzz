@@ -49,4 +49,11 @@ public class PillarFizzBuzzTest {
         assertEquals("2", fizzBuzz.fizz(2));
     }
     
+    @Test
+    public void whenFizzBuzzIsPassedAMultipleOfThreeItReturnsFizz(){
+        PillarFizzBuzz fizzBuzz = new PillarFizzBuzz();
+        assertEquals("fizz", fizzBuzz.fizz(3));
+        assertEquals("fizz", fizzBuzz.fizz(6));
+    }
+    
 }
