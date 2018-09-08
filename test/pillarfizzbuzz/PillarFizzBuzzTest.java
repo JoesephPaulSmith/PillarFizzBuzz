@@ -18,6 +18,8 @@ import static org.junit.Assert.*;
  */
 public class PillarFizzBuzzTest {
     
+    PillarFizzBuzz fizzBuzz;
+    
     public PillarFizzBuzzTest() {
     }
     
@@ -31,6 +33,7 @@ public class PillarFizzBuzzTest {
     
     @Before
     public void setUp() {
+        fizzBuzz = new PillarFizzBuzz();
     }
     
     @After
@@ -39,19 +42,16 @@ public class PillarFizzBuzzTest {
 
     @Test
     public void whenFizzBuzzIsPassedANumberItReturnsThatNumber(){
-        PillarFizzBuzz fizzBuzz = new PillarFizzBuzz();
         assertEquals("1", fizzBuzz.fizz(1));
     }
     
     @Test
     public void whenFizzBuzzIsPassedATwoItReturnsATwo(){
-        PillarFizzBuzz fizzBuzz = new PillarFizzBuzz();
         assertEquals("2", fizzBuzz.fizz(2));
     }
     
     @Test
     public void whenFizzBuzzIsPassedAMultipleOfThreeItReturnsFizz(){
-        PillarFizzBuzz fizzBuzz = new PillarFizzBuzz();
         assertEquals("fizz", fizzBuzz.fizz(3));
         assertEquals("fizz", fizzBuzz.fizz(6));
     }
