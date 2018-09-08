@@ -56,4 +56,10 @@ public class PillarFizzBuzzTest {
         assertEquals("fizz", fizzBuzz.fizz(6));
     }
     
+    @Test
+    public void whenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz(){
+        assertEquals("buzz", fizzBuzz.fizz(5));
+        assertEquals("buzz", fizzBuzz.fizz(10));
+    }
+    
 }
